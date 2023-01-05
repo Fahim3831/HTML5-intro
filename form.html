@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+    <link rel="stylesheet" href="/styles/nav.css">
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        form{
+            background-color: rgb(75, 179, 179);
+            /* padding-right: 400px; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li> <a href="Table.html">Table</a></li>
+            <li><a href="semantic.html">Semantic</a></li>
+            <li><a href="non-semantic.html">Non Semantic</a></li>
+            <li><a href="audio-video.html">Media</a></li>
+        </ul>
+    </nav>
+    <h2 style="text-align: center;color: rgb(28, 25, 189);">Form for personal Details</h2>
+</header>
+    
+    <form>
+        <label for="Name">&nbsp&nbsp&nbspYour Name
+            <input id="Name" type="text" placeholder="Enter Your Name ">
+        </label>
+
+        <label for="Age">&nbsp&nbsp&nbsp&nbsp&nbsp Your Age 
+            <input id="Age" type="number" max="3" placeholder="Enter Your Age ">
+        </label>
+
+        <label for="email">&nbsp  &nbspYour Email
+            <input id="email" type="email" placeholder="Enter Your Email" >
+        </label>
+        <label for="phone">&nbsp  &nbspYour phone
+            <input id="phone" type="number"  placeholder="Enter Your Phone number" >
+        </label>
+        <label for="DOB"> Date of Birth
+            <input type="date" id="DOB">
+        </label>
+        <fieldset>
+            <legend>Select Your Gender</legend>
+            <label for="Male">
+                <input type="radio" name="Gender" id="Male"> &nbsp Male
+            </label>
+            <label for="Female">
+                <input type="radio" name="Gender" id="Female">
+                &nbsp Female
+            </label>
+            <label for="Others">
+                <input type="radio" name="Gender" id="Others">
+                &nbsp Others
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Select The Availabe Documents</legend>
+            <label for="NID">
+                <input type="checkbox" name="Documents" id="NID">&nbsp NID
+            </label>
+            <label for="Birth Certificate">
+                <input type="checkbox" name="Documents" id="NID">&nbsp Birth Certificate
+            </label>
+            <label for="Passport">
+                <input type="checkbox" name="Documents" id="NID">&nbsp Passport
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <textarea name="Address" id="" cols="95" rows="4" placeholder="Enter Your Address"></textarea>
+        </fieldset>
+        <input style="margin-top: 10px;margin-left: 240px;" type="reset" value="Reset">
+        <input style="margin-top: 10px;margin-left: 100px;text-align: center;"  type="submit" value="SUBMIT">
+    </form>
+
+</body>
+</html>
